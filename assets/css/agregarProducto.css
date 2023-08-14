@@ -1,0 +1,86 @@
+.productos{
+    width: 100%;
+    height: 35.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #E5E5E5;
+}
+.producto__form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px auto;
+    gap: 20px;
+}
+.form__title{
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #464646;
+}
+.form__inputs{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+    
+}
+.form__inputs input{
+    height: 2.5rem;
+    width: 17rem;
+    border: none;
+    font-size: 18px;
+    
+    color: #464646;
+}
+.form__inputs input::placeholder {
+    visibility: hidden;
+    
+    
+}
+.form__inputs input:focus {
+    outline: none;
+}
+.input-label {
+    position: absolute;
+    top: .375rem;
+    left: 0.5rem;
+    font-size: 15px;
+    color: #464646;
+    transition: all 0.25s;
+}
+
+.form__inputs input:not(:placeholder-shown) + .input-label,
+.form__inputs input:focus + .input-label {
+    font-size: 0.6rem;
+    top: 0.15rem;
+    transition: all 0.25s;
+    color: #2A7AE4;
+}
+.form__inputs textarea{
+    width: 17rem;
+    border: none;
+    
+}
+
+
+.form__button button{
+    height: 2rem;
+    width: 17rem;
+    border: none;
+    color: #E5E5E5;
+    background-color:#2A7AE4;
+}
+@media screen and (min-width: 760px){
+    .form__inputs input{
+        width: 27rem;
+    }
+    .form__inputs textarea{
+        width: 27rem;
+    }
+    .form__button button{
+        width: 27rem;
+    }
+}

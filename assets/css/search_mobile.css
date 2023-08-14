@@ -1,0 +1,33 @@
+.header__search__movile{
+    display: none;
+}
+.header__search__movile form{
+    width: 27rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.header__search__movile input{
+    width: 22rem;
+    height: 2rem;
+    border-radius: 1.25rem;
+    border: 1px solid #2A7AE4;
+}
+.header__search__movile button{
+    background: none;
+    border: none;
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    cursor: pointer;
+}
+@media screen and (min-width: 450px){
+    .header__search__movile{
+        margin: auto;
+    }
+}
+@media screen and (min-width: 760px){
+    .header__search__movile form{
+        display: none;
+    }
+}

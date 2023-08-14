@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Producto</title>
+    <!--Css links-->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/search_mobile.css">
+    <link rel="stylesheet" href="/assets/css/agregarProducto.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+<body>
+    <!--Header-->
+    <header class="header" id="header">
+        <div class="header__content">
+                <a href="index.html" class="header__img"><img src="assets/img/Logo.png" alt="logo-alura"></a>
+            <div class="header__search">
+                <form action="" method="get">
+                    <input type="text" placeholder="¿Que deseas buscar?">
+                    <button type="button"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+                </form>
+            </div>
+            <div class="header__login">
+                <button class="header__login__btn"><a href="#">Menu Administrador</a></button>
+            </div>
+            <button type="submit" id="search_toogle" class="header__search__icon"><i id="search-icon" class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+        </div>
+        <div class="header__search__menu">
+            <div class="header__search__movile"id="search_mobile_form">
+                <form action="" method="get">
+                    <input type="text" placeholder="¿Que deseas buscar?">
+                    <button type="button"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!--End header-->
+
+    <section class="productos">
+        <form action="" class="producto__form">
+            <div class="form__title">
+                <h1>Agregar Producto</h1>
+            </div>
+            <div class="form__inputs">
+                <input name="url-imagen" id="url-imagen" placeholder="url de imagen" type="text">
+                <label class="input-label" for="url-imagen">url de imagen</label>
+            </div>
+            <div class="form__inputs">
+                <input name="categoria" id="categoria" placeholder="categoria" type="text">
+                <label class="input-label" for="categoria">categoria</label>
+            </div>
+            <div class="form__inputs">
+                <input name="nombre producto" id="nombre-producto" placeholder="nombre producto" type="text">
+                <label class="input-label" for="nombre producto">nombre producto</label>
+            </div>
+            <div class="form__inputs">
+                <input name="precio producto" id="precio-producto" placeholder="precio producto" type="text">
+                <label class="input-label" for="precio producto">precio producto</label>
+            </div>
+            <div class="form__inputs">
+                <textarea name="descripcion producto" id="descripcion-producto" placeholder="descripcion producto" cols="20" rows="10"></textarea>
+            </div>
+            <div class="form__button">
+                <button type="submit">Agregar Producto</button>
+            </div>
+        </form>
+    </section>
+    <!--footer-->
+    <footer class="footer" id="footer">
+        <div class="footer__content">
+            <img src="assets/img/Logo.png" alt="" class="footer__logo">
+            <ul class="footer_menu">
+                <li class="footer__menu__item">Quienes Somos</li>
+                <li class="footer__menu__item">Política de privacidad</li>
+                <li class="footer__menu__item">Programa de fidelidad</li>
+                <li class="footer__menu__item">Nuestras tiendas</li>
+                <li class="footer__menu__item">Quiero ser franquiciado</li>
+                <li class="footer__menu__item">Anúncie aqui</li>
+            </ul>
+        </div>
+        <div class="footer__contacto">
+            <h1>Hable con nosotros</h1>
+            <div class="footer__form">
+                <input type="text" class="footer__form__input" placeholder="Nombres">
+                <input class="footer__form__input form__mensage" type="text" placeholder="Escribe tu mensaje">
+            </div>
+            <button type="submit">Enviar</button>
+        </div>
+    </footer>
+</body>
+</html>
